@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+body{background: #fff; color: #333;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+table{width: 100%; border-collapse: collapse;}
+button{cursor: pointer;}
+.wrap{width: 1000px; height: 650px; display: flex;}
+
+header{width: 200px; height: 100%; background: #af86cf;}
+header h1 a{display: block; width: 200px; height: 100px; padding-top: 40px;}
+nav{margin: 10px; width: 180px; height: 300px; z-index: 33;}
+nav>ul>li>a{display: block; width: 100%; height: 50px; text-align: center; line-height: 50px; color: #fff; background: #7b09cb;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #b3b013; color: #222; font-weight: bold;}
+.sub li a{display: block; width: 100%; height: 30px; font-size: 14px; text-align: center; line-height: 30px; background: rgba(255, 255, 255, .3);}
+.sub li a:hover,
+.sub li a:focus{background: rgba(255, 255, 255, .5); color: #333; font-weight: bold;}
+.sub{display: none;}
+
+.bb{width: 800px; height: 100%;}
+.slide{width: 100%; height: 350px; background: #c3c6f1;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul{width: 100%; height: 100%; position: relative;}
+.slide ul li{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.slide ul li a{display: block; height: 100%;}
+.slide ul li h2{position: absolute; bottom: 0; background: rgba(255, 255, 255, .6); color: #ffffff; width: 100%; height: 80px; line-height: 80px; padding-left: 50px; text-shadow: 3px 3px 3px rgba(0,0,0,.5);}
+
+.con{width: 100%; height: 200px; display: flex; gap: 10px; padding: 10px;}
+.con article{width: 260px; height: 180px;} .c1 .gal{display: none;}
+.c1{position: relative;}
+.c1 ul{display: flex;}
+.c1 h3{font-size: 17px; width: 100px; height: 30px; line-height: 30px; text-align: center; background: #a6a5a6; color: #fff; border-radius: 10px 10px 0 0;}
+.c1 ul li.on h3{background: #7b09cb; color: #fff;}
+.c1 .tabc{position: absolute; width: 100%; left: 0; background: #7b09cb; color: #fff; height: 150px;}
+
+.not{padding: 5px; font-size: 15px;}
+.not tr{border-bottom: 1px solid #999;}
+.not th{font-size: 14px;}
+.not td{font-size: 13px;}
+.not a{display: block; width: 180px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 8px 5px;}
+.not tr:hover,
+.not tr a:focus{opacity: 0.7;}
+
+.gal{padding: 7px;}
+.gal ul{gap: 6px; padding-top: 9px;}
+.gal img{width: 80px; height: 120px; object-fit: cover; object-position: center;}
+.gal ul li:hover a,
+.gal ul li a:focus{opacity: 0.7;}
+
+.c2 img{width: 240px; height: 170px; object-fit: cover; object-position: center; border-radius: 10px;}
+.c2 a{display: block; text-align: center; padding: 5px; position: relative;}
+.c2 p{background: rgba(0,0,0,.5); color: #fff; width: 200px; height: 30px; line-height: 30px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px;}
+.c2 a:hover,
+.c2 a:focus{opacity: 0.7;}
+
+.c3 ul{display: flex; gap: 15px; justify-content: center; padding-top: 60px;}
+.c3 ul li{text-align: center;}
+.c3 ul li p{font-weight: bold; padding-top: 10px;}
+.c3 ul li:hover p,
+.c3 ul li a:focus p{opacity: 0.7;}
+
+footer{width: 100%; height: 100px; background: #333; color: #fff;}
+footer div{float: left; text-align: center;}
+.f1{width: 200px; height: 100px;}
+.f1 a{display: block; height: 100%; padding-top: 26px;}
+.f2{width: 600px; height: 50px;}
+.f2 ul{display: flex; gap: 20px; justify-content: center; padding-top: 14px;}
+.f2 ul li{border-right: 1px solid #fff; padding-right: 15px;}
+.f2 ul li:last-child{border-right: none;}
+.f2 ul li:hover,
+.f2 ul li a:focus{font-weight: bold;}
+.f3{width: 600px; height: 50px; padding-top: 10px;}
+
+.pop{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99; display: none;}
+.ppb{width: 370px; height: 200px; background: #fff; border: 7px solid #7b09cb; padding: 20px; margin: 180px auto;}
+.but{text-align: right; margin-top: 20px;}
+.but button{border: none; background: #7b09cb; color: #fff; border-radius: 7px; padding: 7px;}

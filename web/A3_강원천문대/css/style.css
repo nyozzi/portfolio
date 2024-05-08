@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+*{padding: 0; margin: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+body{background: #fff; color: #333;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+table{width: 100%; border-collapse: collapse;}
+button{cursor: pointer;}
+.wrap{width: 1200px; height: 700px; margin: auto;}
+
+header{height: 100px; background: #fff; position: relative; background: #555;}
+h1 img{margin-top: 30px;}
+nav{position: absolute; right: 20px; top: 33px; z-index: 33;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; width: 150px; text-align: center; background: #555; color: #fff; padding: 10px; font-weight: bold; font-size: 18px;}
+nav>ul>li:hover>a{background: #a349a4;}
+.sub{display: none;}
+.sub li a{display: block; padding: 7px; text-align: center; font-size: 14px; background: rgba(255, 255, 255, 0.7);}
+.sub li a:hover{background: #a349a4; color: #fff;}
+
+.slide{height: 300px; position: relative;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul li{width: 1200px; height: 300px; position: absolute; top: 0; left: 0;}
+.slide ul li a{display: block; height: 100%;}
+.slide ul li a h2{position: absolute; background: rgba(255, 255, 255, 0.5); width: 500px; padding: 10px; border-radius: 20px; text-align: center; margin: 120px 350px;}
+
+.bb{height: 200px; display: flex;}
+
+.sb1, .sb2, .sb3{padding: 10px 5px;}
+
+.sb1{position: relative; width: 400px;}
+.sb1 .tabm>li{width: 150px; display: inline-block; background: #fee0ff; color: #777; border-radius: 15px 15px 0 0; margin-left: 5px;}
+.sb1 .tabm>li:last-child{margin-left: -5px;}
+.sb1 .tabm>li.on{background: #c26dc4; color: #fff; border-radius: 15px 15px 0 0;}
+.sb1 .tabm>li>h2>a{display: block; text-align: center; padding: 5px; font-size: 16px;}
+.sb1 .tabc{background: #c26dc4; color: #fff; width: 100%; padding: 10px; position: absolute; left: 0; height: 150px; border-radius: 7px 0 7px 0;}
+
+.nt tr{border-bottom: 0.5px solid #999;}
+.nt th{text-align: left; font-size: 13px;}
+.nt td{font-size: 13px;}
+.nt a{padding: 8px 2px; display: block; width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.nt tr:hover{opacity: 0.7;}
+
+.gl{display: none;}
+.gl ul{display: flex; gap: 15px; justify-content: center; padding-top: 14px;}
+.gl ul li a img{width: 110px; height: 110px;}
+.gl ul li a img:hover{opacity: 0.7;}
+
+.sb2{position: relative; width: 400px;}
+.sb2 a{display: block; height: 100%;}
+.sb2 img{width: 380px; height: 180px; padding-left: 5px; border-radius: 15px 0 15px 0;}
+.sb2 span{width: 200px; background: rgba(0,0,0,0.5); color: #fff; padding: 10px; border-radius: 10px; position: absolute; top:85px; left: 100px; text-align: center;}
+.sb2 a:hover{opacity: 0.5;}
+
+.sb3{width: 400px;}
+.sb3 h2{color: #a349a4; margin-top: 10px; margin-bottom: 30px;}
+.sb3 ul{display: flex; gap: 30px; text-align: center; justify-content: center;}
+.sb3 ul li a{display: block; height: 100%;}
+.sb3 ul li p{width: 80px; height: 80px; background: #a349a4; text-align: center; padding-top: 20px; border-radius: 20px;}
+.sb3 ul li span{font-weight: bold; margin-top: 5px; display: block;}
+.sb3 ul li p:hover{opacity: 0.5;}
+
+footer{height: 100px; background: #333; color: #fff;}
+footer>div{float: left;}
+.f1{width: 200px; height: 100%; filter: grayscale(10);}
+.f1 a{display: block; height: 100px; padding-top: 30px;}
+.f2{width: 1000px; height: 50%;}
+.f2 ul{display: flex; gap: 10px; justify-content: center; padding-top: 15px;}
+.f2 ul li{border-right: 1px solid #fff; padding-right: 10px;}
+.f2 ul li:last-child{border-right: none;}
+.f2 ul li:hover{opacity: 0.7;}
+.f3{width: 1000px; height: 50%; text-align: center; padding-top: 13px;}
+
+.pop{position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 99; display: none;}
+.pb{width: 400px; height: 160px; background: #fff; border: 7px solid #a349a4; padding: 20px; border-radius: 15px; margin: 150px auto;}
+.pb h2{font-size: 20px;}
+.pb p{font-size: 14px;}
+.bt{text-align: right; margin-top: 20px;}
+.bt button{border: none; background: #a349a4; color: #fff; padding: 7px; border-radius: 10px;}

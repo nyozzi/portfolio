@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+body{background: #fff; color: #666;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+button{cursor: pointer;}
+
+header{width: 1340px; height: 100px; margin: auto; position: relative;}
+header h1 a{display: block; width: 200px; height: 100px; padding-top: 30px;}
+nav{position: absolute; top: 45px; right: 20px; z-index: 66;}
+nav>ul{display: flex; gap: 10px;}
+nav>ul>li>a{display: block; width: 150px; height: 50px; line-height: 50px; text-align: center; border: 1px solid #20119218; border-radius: 50px;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus {box-shadow: 2px 2px 5px #c3c1d3; transition: 0.3s;}
+
+.sub {background: rgba(255, 255, 255, 0.6); border-radius: 20px; margin-top: 10px; display: none; z-index: 77; color: #222;}
+.sub li a{display: block; width: 150px; height: 50px; line-height: 50px; text-align: center;}
+.sub li:hover,
+.sub li a:focus{text-shadow: 2px 2px 3px #9b9b9bb2; font-weight: bold; color: #fff; transition: 0.3s;}
+
+.slide{width: 100%; height: 350px;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul{width: 100%; height: 100%; position: relative;}
+.slide li{width: 100%;height: 100%; position: absolute;}
+.slide a{display : block; height: 100%;}
+.slide h2{color: #fff; text-shadow: 4px 4px 4px #464343; position: absolute; top: 33%; left: 18%; font-size: 35px; width: 600px;}
+
+.bb{width: 1340px; margin: auto; position: relative;}
+.link{width: 100%; height: 100px; background: #1e1277; position: absolute; top: -100px;}
+.link ul{display: flex; justify-content: center;}
+.link li{flex-grow: 1; text-align: center; height: 100px; padding: 30px 40px;}
+.link a{display: block; width: 100%; height: 100%; line-height: 40px; color: #fff; font-size: 15px;}
+.link img{width: 40px; height: 40px; margin-right: 5px;}
+.link li:nth-child(2n){background: #8a8997;}
+.link li:hover span,
+.link li a:focus span{font-weight: bold;}
+
+.banner{width: 100%; height: 200px;}
+.banner a{display: flex;}
+.bp{padding: 17px 48px; width: 350px; height: 200px; text-align: center;}
+.bp div{overflow: hidden; border-radius: 20px; width: 250px;}
+.bp img{height: 170px; object-fit: cover; border-radius: 20px;}
+.bt{width: 750px; height: 200px; padding: 50px 10px;}
+.bt h3{font-size: 26px;}
+.bt p{padding-top: 15px; font-size: 14px;}
+.ba{width: 240px; height: 200px; padding: 50px 60px;}
+.banner a:hover .bp img,
+.anner a:focus .bp img{transform: scale(1.1); transition: 0.7s;}
+
+.con{width: 100%; height: 300px; padding: 10px 20px;}
+
+.gal{display: none;}
+
+.not{position: relative; padding: 5px 30px;}
+.tmen{display: flex;}
+.tcon{position: absolute; left: 0; border-top: 3px solid #1e1277; width: 100%;}
+.tmen>li{width: 120px; height: 40px; line-height: 40px; background: #8a8997; color: #fff; text-align: center; margin-left: 10px;}
+.tmen>li:last-child{margin-left: -1px;}
+.tmen li.on{background: #1e1277;}
+.not a{display: flex; padding: 8px 20px; position: relative;}
+.not p{font-size: 14px;}
+.not span{width: 200px; position: absolute; right: 0; font-size: 13px;}
+.not li:nth-child(2n){background: #1e1277; }
+.not li:nth-child(odd){color: #333;}
+.not li:hover p,
+.not li a:focus p{opacity: 0.7;}
+
+.gal ul{display: flex; justify-content: center; gap: 50px; color: #333; padding-top: 25px;}
+.gal img{border-radius: 20px; width: 250px; object-fit: cover;}
+.gal p{font-size: 14px;}
+.gal div{border-radius: 20px; overflow: hidden;}
+.gal li:hover img,
+.gal li a:focus img{transform: scale(1.1); transition: 0.7s;}
+
+footer{width: 1340px; height: 120px; margin: auto; color: #fff; background: #414141;}
+.f1{width: 200px; height: 120px; float: left;}
+.f1 a{display: block; height: 100%; padding-top: 40px; filter: grayscale(10);}
+.f2{width: 1140px; height: 60px; float: right;}
+.f2 ul{display: flex; gap: 15px; padding-top: 30px; padding-left: 10px;}
+.f2 li{border-right: 1px solid #fff; padding-right: 10px;}
+.f2 li:last-child{border-right: none;}
+.f2 li:hover,
+.f2 li a:focus{font-weight: bold;}
+.f3{width: 1140px; height: 60px; float: right; padding-left: 10px; padding-top: 5px;}
+
+.pop{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 77; display: none;}
+.ppb{width: 400px; height: 220px; background: #fff; padding: 20px; border: 7px solid #1e1277; border-radius: 10px; margin: 180px auto;}
+.but{text-align: right; margin-top: 20px;}
+button{border: none; background: #1e1277; border-radius: 10px; padding: 7px; color: #fff;}

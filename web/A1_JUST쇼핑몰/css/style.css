@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 맑은 고딕;}
+body{background: #fff; color: #333;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%;}
+button{cursor: pointer;}
+table{border-collapse: collapse; width: 100%;}
+.wrap{width: 1200px; margin: auto;}
+
+header{height: 100px; position: relative; background: #5a3e15;}
+h1{width: 200px; height: 100px; padding: 30px 5px;}
+nav{position: absolute; right: 0; top: 30px; z-index: 33;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; width: 150px; background: #927f63; color: #fff; padding: 15px; text-align: center; font-weight: bold;}
+nav>ul>li:hover>a{background: #5a3e15;}
+.sub{display: none;}
+.sub li a{display: block; background: rgba(255,255,255,0.8); padding: 5px; text-align: center; font-size: 14px;}
+.sub li a:hover{background: #927f63; color: #fff;}
+
+.con{height: 500px;}
+.slide{height: 300px; background: #f0f0e3; position: relative; overflow: hidden;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul{position: absolute; top: 0; left: 0; height: 900px;}
+.slide ul li{position: relative; width: 1200px; height: 300px;}
+.slide ul li a{display: block; height: 100%;}
+.slide ul li h2{background: rgba(0, 0, 0, 0.5); position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); padding: 20px; border-radius: 50px; color: #fff;}
+
+.bb{height: 200px; display: flex;}
+.bb article{width: 400px; height: 100%;}
+.sb1{position: relative; padding: 8px;}
+.sb1 .tab>li{width: 150px; display: inline-block; background: #f8eddd; border-radius: 25px 25px 0 0;}
+.sb1 .tab>li.on{background: #ceb398; color: #fff;}
+.sb1 .tab>li>h2>a{display: block; padding: 5px 0; text-align: center; font-size: 20px;}
+.tc{background: #ceb398; height: 147px; padding: 7px; position: absolute; width: 100%; left: 0; border-radius: 0 10px 10px 10px;}
+
+.nt th{text-align: left;}
+.nt tr{border-bottom: 1px solid #fff;}
+.nt a{display: block; padding: 5px; width: 250px;}
+.nt tr:hover{color: #777;}
+
+.gl{display: none;}
+.gl ul{height: 100%; text-align: center; display: flex; gap: 15px; align-items: center;}
+.gl>ul>li>a>img{width: 200px; height: 100px; border-radius: 6px;}
+.gl>ul>li>a>img:hover{opacity: 0.5;}
+
+.sb2{padding: 8px;}
+.sb2 a{display: block; height: 100%; background: url(../img/bn.jpg) center/cover; border-radius: 20px; text-align: center; position: relative;}
+.sb2 h2{background: rgba(0, 0, 0, 0.5); color: #fff; padding: 7px; border-radius: 20px; width: 250px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.sb2 a:hover{opacity: 0.8;}
+
+.sb3{padding: 8px;}
+.sb3 h2{color: #ceb398; margin-bottom: 20px;}
+.sb3 ul{display: flex; gap: 20px; justify-content: center; text-align: center;}
+.sb3 ul li a{display: block; height: 100%;}
+.sb3 ul li p{width: 80px; height: 80px; padding-top: 20px; background: #ceb398; border-radius: 20px;}
+.sb3 ul li span{margin-top: 10px; display: block; font-weight: bold;}
+.sb3 ul li p:hover{opacity: 0.7;}
+
+
+footer{height: 100px; background: #777; display: flex;}
+.f1{width: 200px;}
+.f1 img{width: 180px; filter: grayscale(10); margin: 30px 10px;}
+.f2{width: 800px; color: #fff; text-align: center; line-height: 100px;}
+.f3{width: 200px; display: flex; gap: 15px; padding: 35px;}
+.f3 li a{display: block; width: 30px; height: 30px; background: #fff; border-radius: 50%; text-align: center; padding-top: 3px;}
+.f3 li:nth-child(1) a{background: rgb(15, 180, 15);}
+.f3 li:nth-child(2) a{background: rgb(47, 47, 196);}
+.f3 li:nth-child(3) a{background: red;}
+
+.pop{position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 99; display: none;}
+.body{width: 350px; height: 200px; background: #fff; border: 7px solid #5a3e15; border-radius: 10px; padding: 15px; margin: 150px auto;}
+.button button{border: none; background: #5a3e15; color: #fff; padding: 8px; margin: 5px auto; border-radius: 10px;}
+.button{text-align: right; margin-top: 28px;}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+body{background: #fff; color: #333;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+table{width: 100%; border-collapse: collapse;}
+button{cursor: pointer;}
+
+header{width: 100%; height: 100px; background: #dcf3c5;}
+.hinner{width: 1200px; height: 100px; margin: auto; position: relative;}
+header h1{width: 200px; height: 100px; padding-top: 30px;}
+nav{position: absolute; top: 30px; right: 20px; z-index: 55;}
+nav>ul{display: flex;}
+nav>ul>li>a{display: block; width: 150px; text-align: center; padding: 10px; font-size: 18px; background: #59ae00; color: #fff;}
+nav>ul>li:hover>a{background: #dcf3c5; color: #333; font-weight: bold;}
+.sub{height: 156px; background: #fff; display: none;}
+.sub li a{display: block; padding: 9px; text-align: center;}
+.sub li a:hover{background: #59ae00; font-weight: bold;}
+
+.con{width: 1200px; height: 500px; margin: auto;}
+.slide{height: 300px; background: #8b874d; position: relative; overflow: hidden;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul{width: 3600px; height: 100%; position: absolute; top: 0; left: 0;}
+.slide ul li{width: 1200px; height: 100%; float: left; position: relative;}
+.slide ul li h3{position: absolute; background: rgba(0, 0, 0, .5); color: #fff; text-align: center; width: 700px; padding: 10px; border-radius: 30px 0 30px 0; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.bb{height: 200px; display: flex; gap: 10px; padding: 10px 5px;}
+.sb1{width: 400px; height: 180px; position: relative;}
+.sb1 .tab>li{width: 150px; background: #fff; border-radius: 20px 20px 0 0; display: inline-block;}
+.sb1 .tab>li>a{display: block; text-align: center; padding: 6px; font-weight: bold; font-size: 17px;}
+.sb1 .tab li.on{background: #59ae00; color: #fff;}
+.tabc{position: absolute; width: 100%; border-top: 3px solid #59ae00; left: -5px;}
+
+.not tr{border-bottom: 0.5px solid #777; font-size: 15px; color: #333;}
+.not th{text-align: left;}
+.not td{text-align: right;}
+.not a{display: block; width: 300px; padding: 8px 15px; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.not tr:hover{opacity: 0.7;;}
+
+.gal{padding: 14px 5px; display: none;}
+.gal ul{display: flex; gap: 10px;}
+.gal li:hover{opacity: 0.7;}
+
+.sb2{width: 400px; height: 180px;}
+.sb2 a{display: block; width: 100%; height: 100%; border-radius: 20px; overflow: hidden; position: relative;}
+.sb2 p{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, .5); color: #fff; width: 200px; text-align: center; padding: 8px; border-radius: 20px 0 20px 0;}
+.sb2 a:hover{opacity: 0.7;}
+
+.sb3{width: 400px; height: 180px; padding: 10px 20px;}
+.sb3 h3{color: #59ae00;}
+.sb3 ul{display: flex; gap: 10px; justify-content: center;}
+.sb3 ul li{text-align: center; padding: 20px 10px; margin-top: 28px;}
+.sb3 ul li p{background: #59ae00; width: 60px; height: 60px; padding-top: 9px; border-radius: 50%; margin-bottom: 10px;}
+.sb3 ul li a span{font-weight: bold;}
+.sb3 li:hover p{opacity: 0.7;}
+
+footer{width: 100%; height: 100px; background: #555; color: #fff;}
+.finner{width: 1200px; height: 100px; margin: auto;}
+.f1{width: 200px; height: 100px; float: left; padding-top: 30px; filter: grayscale(10);}
+.f2{width: 1000px; height: 50px; float: right; padding-top: 12px;}
+.f2 ul{display: flex; gap: 8px; justify-content: center;}
+.f2 ul li{border-right: 1px solid #fff; padding-right: 8px;}
+.f2 ul li:hover{font-weight: bold;}
+.f3{width: 1000px; height: 50px; float: right; text-align: center; padding-top: 12px;}
+
+.pop{position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 99; display: none;}
+.ppb{width: 500px; height: 180px; background: #fff; border: 7px solid #59ae00; border-radius: 18px; padding: 18px; margin: 180px auto;}
+.bt{text-align: right; margin-top: 30px;}
+.bt button{border: none; background: #59ae00; color: #fff; border-radius: 12px; padding: 7px;}

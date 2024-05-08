@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+body{background: #fff; color: #333;}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{max-width: 100%; vertical-align: top;}
+table{width: 100%; border-collapse: collapse;}
+button{cursor: pointer;}
+.wrap{min-width: 1200px; min-height: 900px; height: 100vh;}
+
+.top{width: 100%; height: calc(100% - 120px); background: #ddd; display: flex;}
+header{width: 200px; background: #ce2c2cb9;}
+header h1 a{display: block; height: 100px; padding-top: 50px;}
+nav{padding: 35px 15px;}
+nav>ul>li>a{display: block; width: 160px; height: 40px; line-height: 40px; padding-left: 10px; background: #ce2c2c; color: #fff; font-size: 18px;}
+nav>ul>li:hover>a,
+nav>ul>li>a:focus{background: #447042;}
+.sub{display: none;}
+.sub li a{display: block; width: 160px; height: 40px; line-height: 40px; padding-left: 10px; font-size: 15px; background: rgba(255, 255, 255, .5);}
+.sub li:hover a,
+.sub li a:focus{background: #ce2c2cb9; color: #fff;}
+
+.con{width: 400px; height: 100%;}
+.c1{height: 150px;}
+.c1 a{display: flex; height: 100%; align-items: center;}
+.c1 .bp{margin-left: 7px; width: 140px; height: 100px;}
+.c1 .bp img{width: 100%; height: 100%; object-fit: cover;}
+.c1 .bt{font-size: 12px; margin-left: 10px; padding: 4px;}
+.c1 .ba{width: 40px;}
+.c1 strong{font-size: 16px;}
+.c1 a:hover img,
+.c1 a:focus img{opacity: 0.7;}
+
+.con h3{width: 150px; height: 30px; line-height: 30px; padding-top: 2px; background: #447042; color: #fff; margin-left: 5px; text-align: center; border-radius: 30px 30px 0 0;}
+.c2{height: 230px; padding-top: 10px;}
+.c2 table{border-top: 2px solid #447042; margin-left: 5px;}
+.c2 tr{text-align: left;}
+.c2 td{padding-right: 8px; font-size: 13px;}
+.c2 a{display: block; width: 280px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 13px 6px;}
+.c2 tr:nth-child(2n){background: #ecebeb;}
+.c2 tr:hover,
+.c2 tr a:focus{opacity: 0.7;}
+
+.c3{height: 250px; padding-top: 20px;}
+.c3 ul{display: flex; gap: 25px; padding: 18px; border-top: 2px solid #447042; margin-left: 5px; justify-content: center;}
+.c3 li{text-align: center;}
+.c3 li img{border-radius: 20px; height: 150px;}
+.c3 p{margin-top: 5px; font-weight: bold; font-size: 14px;}
+.c3 li:hover img,
+.c3 li a:focus img{opacity: 0.7;}
+
+.c4{height: 150px;}
+.c4 ul{display: flex; gap: 18px; padding-top: 38px; justify-content: center;}
+.c4 li{text-align: center;}
+.c4 p{font-size: 13px; font-weight: bold; padding-top: 6px;}
+.c4 li:hover img,
+.c4 li a:focus img{opacity: 0.7;}
+
+.slide{width: calc(100% - 600px); background: #d1a2a2; position: relative; color: #fff; overflow: hidden;}
+.slide ul li.s1{background: url(../img/s1.jpg) no-repeat center/cover;}
+.slide ul li.s2{background: url(../img/s2.jpg) no-repeat center/cover;}
+.slide ul li.s3{background: url(../img/s3.jpg) no-repeat center/cover;}
+.slide ul{width: 300%; position: absolute; top: 0; left: 0; height: 100%; display: flex;}
+.slide li{width: calc(100% / 3); height: 100%; position: relative;}
+.slide a{display: block; height: 100%;}
+.slide h1{position: absolute; bottom: 0; background: rgba(0, 0, 0, .5); width: 100%; height: 130px; padding: 18px; text-shadow: 3px 3px 3px #740808;}
+
+footer{width: 100%; height: 120px; background: #aca2a2; color: #fff;}
+.f1{width: 200px; height: 120px; float: left;}
+.f1 a{display: block; height: 100%; padding-top: 40px; filter: grayscale(10);}
+.f2{width: calc(100% - 200px); height: 60px; float: right}
+.f2 ul{display: flex; gap: 10px; padding-left: 20px; padding-top: 38px;}
+.f2 li{border-right: 1px solid #fff; padding-right: 10px;}
+.f2 li:last-child{border-right: none;}
+.f2 li:hover,
+.f2 li a:focus{font-weight: bold;}
+.f3{width: calc(100% - 200px); height: 60px; float: right; padding-left: 20px; padding-top: 5px;}
+
+.pop{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .5); z-index: 99; display: none;}
+.ppb{width: 500px; height: 200px; background: #fff; border: 7px solid #ce2c2c; border-radius: 10px; margin: 130px auto; padding: 20px;}
+.but{text-align: right;}
+button{border: none; background: #ce2c2c; color: #fff; border-radius: 7px; padding: 7px;}
